@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>A-Frame-Video</title>
+</head>
+<body>
+    <script>
+        AFRAME.registerComponent('change-color-on-hover', {
+    schema: {
+      color: {default: 'black'}
+    },
+    
+
+    init: function () {
+      var data = this.data;
+      var el = this.el;  // <a-box>
+      var defaultColor = el.getAttribute('material').color;
+      var vid = document.getElementById('videoBunny');
+      var scene = document.getElementsByTagName('a-scene')[0];
+
+      el.addEventListener('mousedown', function () {
+        
+        if(el.getAttribute('color') == "red") {
+            el.setAttribute('color', "black");
+            scene.setAttribute('background', "color:white");
+            vid.pause();
+        }else {
+            el.setAttribute('color', data.color);
+            scene.setAttribute('background', "color:black");
+            vid.play();
+        }
+      });
+    }
+  });
+    </script>
+    <a-scene background="color: #FAFAFA">
+        <a-asset>
+            <video id="videoBunny" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+        </a-asset>
+    <a-box scale="1 2 1" position="0 0 -2"></a-box>
+    <a-box scale="1 0.5 1.1" position="0 1.3 -2" rotation="45 0 0"></a-box>
+       <a-sphere position="0 1.5 -1.85" color="black" scale="0.2 0.2 0.2" rotation="-45" change-color-on-hover="color:red">
+           <a-text value="START" align="center"></a-text>
+       </a-sphere>
+       <a-plane width="20" height="20" rotation="-90 0 0" color = "black"></a-plane>
+       <a-video id="vid" src="#videoBunny" position="1 10 -20" scale="32 18 0"></a-video>
+       <a-camera>
+           <a-cursor></a-cursor>
+       </a-camera>
+    </a-scene>
+</body>
+</html>
