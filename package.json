@@ -6,6 +6,8 @@
   "author": "mazemaze <yujiro2345@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "global": "^4.4.0",
+    "gltf-pipeline": "^3.0.4",
     "netlify-cli": "^8.1.5"
   }
 }

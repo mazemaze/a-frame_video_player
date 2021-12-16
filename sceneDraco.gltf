@@ -1,0 +1,257 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 1848,
+      "max": [
+        1847
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        0.8032295335741604,
+        0.7556478425276045,
+        0.20564398788938335
+      ],
+      "min": [
+        0.47572472250344705,
+        0.06003845041873408,
+        0.07572472399356318
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        1.002478688955307,
+        0.2268105000257492,
+        0.11200772598385811
+      ],
+      "min": [
+        0.9692160934209824,
+        -0.2231098711490631,
+        -0.0157906673848629
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        0.08114291189404949,
+        17.077138419027847,
+        0.008982828668576914
+      ],
+      "min": [
+        -0.018918446029941804,
+        -0.00833844649366594,
+        -6.211498255606215
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1848,
+      "max": [
+        0.0009775171065493646,
+        0.0009775171065493646
+      ],
+      "min": [
+        -0.0009775171065493646,
+        -0.0009775171065493646
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "daedaljs (https://sketchfab.com/daedalJS)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/6b18d65628334387a71115f939de70c7",
+      "title": "Stage Curtains"
+    },
+    "generator": "Sketchfab-3.47.8",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 3837
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3840,
+      "byteLength": 147
+    }
+  ],
+  "buffers": [
+    {
+      "name": "sceneDraco",
+      "byteLength": 3992,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "images": [
+    {
+      "name": "beams_metallicRoughness",
+      "bufferView": 1,
+      "mimeType": "image/png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "beams",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Stage Curtains_0",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 1,
+            "NORMAL": 2,
+            "POSITION": 3,
+            "TEXCOORD_0": 4
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "COLOR_0": 0,
+                "NORMAL": 1,
+                "POSITION": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6.327019999999999,
+        1
+      ],
+      "name": "Stage Curtains"
+    },
+    {
+      "mesh": 0,
+      "name": "Stage Curtains_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
