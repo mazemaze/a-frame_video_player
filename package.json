@@ -1,0 +1,11 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mazemaze/a-frame_video_player.git",
+  "author": "mazemaze <yujiro2345@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "netlify-cli": "^8.1.5"
+  }
+}

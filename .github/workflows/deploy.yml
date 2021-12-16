@@ -1,0 +1,39 @@
+name: deploy to netflify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-in: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@2
+      
+      - name: Cache node_modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hasFiles('**/package-lock.json')}}
+          restore-keys: |
+            ${{runner.OS}}-build-
+            ${{runner.OS}}
+      
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
+          
+      - name: Deploy to netflify
+        run: npx netlify-cli deploy --dir=./dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETFLIFY_AUTH_TOKEN}}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
