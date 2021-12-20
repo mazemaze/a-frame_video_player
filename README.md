@@ -2,4 +2,4 @@
 
 
 Preview:
-https://app.netlify.com/sites/tender-villani-ebf6e0/overview
+https://tender-villani-ebf6e0.netlify.app/
